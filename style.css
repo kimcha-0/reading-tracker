@@ -1,1 +1,38 @@
+body {
+    margin: 0px;
+}
 
+.root-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    display: flex;
+    background-color: blue;
+    height: 4rem;
+}
+
+.add-book-container {
+    display: flex;
+    justify-content: center;
+    height: 6rem;
+    background-color: yellow;
+    align-items: center;
+}
+
+.books-container {
+    display: flex;
+    justify-content: center;
+    height: 15rem;
+    background-color: green;
+
+}
+
+.footer-container {
+    display: flex;
+    background-color: red;
+    height: 4rem;
+    align-self: flex-end;
+}
