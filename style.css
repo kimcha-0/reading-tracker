@@ -17,10 +17,24 @@ body {
 .add-book-container {
     display: flex;
     justify-content: center;
-    height: 6rem;
+    height: 10rem;
     background-color: yellow;
     align-items: center;
 }
+
+.add-book-form {
+    border: 1px solid red;
+    border-radius: 0.5rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 18rem;
+    height: 10rem;
+}
+
+
 
 .books-container {
     display: flex;
@@ -34,5 +48,5 @@ body {
     display: flex;
     background-color: red;
     height: 4rem;
-    align-self: flex-end;
+    justify-self: flex-end;
 }
