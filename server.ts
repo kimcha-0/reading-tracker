@@ -6,7 +6,7 @@ const router = express.Router();
 const app = express();
 app.use(express.json());
 
-const host = "localhost";
+const host: string = "localhost";
 const PORT = process.env.PORT || 8000;
 
 // define endpoints
