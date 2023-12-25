@@ -40,6 +40,7 @@ const createBook = ((title, author, pages, read) => {
 
 const createBookCard = (book) => {
     const bookCard = document.createElement('div');
+    bookCard.className = 'book-card';
     bookCard.textContent =  `${book.title}`;
     return bookCard;
 }
@@ -58,3 +59,9 @@ Library.addBook(theHobbit);
 Library.addBook(crimeAndPunishment);
 console.log(Library.getBooks());
 Library.displayLibrary();
+
+const addBookBtn = document.getElementById();
+addBookBtn.addEventListener("click", () => {
+    createBook(getBookInput());
+    displayLibrary();
+});
