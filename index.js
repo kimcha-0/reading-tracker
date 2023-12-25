@@ -29,7 +29,7 @@ const Library = (() => {
     };
 })();
 
-const createBook = ((title, author, pages, read) => {
+const createBook = (({ title, author, pages, read }) => {
     return {
         title,
         author,
@@ -60,8 +60,15 @@ Library.addBook(crimeAndPunishment);
 console.log(Library.getBooks());
 Library.displayLibrary();
 
-const addBookBtn = document.getElementById();
+const addBookBtn = document.getElementById('add-book-button');
+const dialog = document.querySelector("dialog");
+const openFormButton = document.querySelector(".add-book-container>button");
+
+openFormButton.addEventListener("click", () => dialog.showModal());
+addBookBtn.addEventListener("click", () => dialog.close());
 addBookBtn.addEventListener("click", () => {
-    createBook(getBookInput());
-    displayLibrary();
+    const bookData = getBookInput();
+    Library.addBook(createBook(bookData));
+    Library.displayLibrary();
+    event.preventDefault();
 });
