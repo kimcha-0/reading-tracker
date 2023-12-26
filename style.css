@@ -38,8 +38,9 @@ body {
     margin: 5px;
 }
 
-.form-row > input {
+.form-row > input, select {
     border-radius: 5px;
+    width: 150px;
     border: 1px solid #9ca3af;
 }
 
@@ -86,17 +87,20 @@ dialog {
 }
 
 .book-card {
+    background-color: #fed7aa;
     border-radius: 10px;
     text-wrap: wrap; 
-    height: 150px;
-    width: 150px;
-    border: 1px solid red;
+    height: 215px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    justify-content: space-between;
 }
 
 .book-shelf {
+    gap: 5px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }

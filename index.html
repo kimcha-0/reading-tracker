@@ -27,10 +27,14 @@
                                 <input type="number" name="bookPages" id="book-pages" required>
                             </div>
                             <div class="form-row">
-                                <label for="book-read">Read</label>
-                                <input type="checkbox" name="bookRead" id="book-read" default="unchecked">
+                                <label for="read-status">Read:</label>
+                                <select name="read" id="read-status">
+                                    <option value="read">Read</option>
+                                    <option value="not-read">Not Read</option>
+                                    <option value="currently-reading">Currently Reading</option>
+                                </select>
                             </div>
-                            <button id='add-book-button'>Add</button>
+                            <button type="submit" id='add-book-button'>Add</button>
                         </form>
                     </div>
                 </dialog>
